@@ -563,42 +563,8 @@
 // ═══════════════════════════════════════════════════
 
 const FEATHER_SVG = `
-<svg class="hero-feather" viewBox="0 0 320 520" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <!-- Outer circle halo -->
-  <circle cx="160" cy="295" r="178" stroke="#c4907a" stroke-width="1.8"/>
-
-  <!-- Feather spine – S-curve -->
-  <path d="M160 35 C157 95 140 152 144 218 C148 278 163 308 160 360 C157 405 153 438 160 478"
-        stroke="#c4907a" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- Scroll curl at top -->
-  <path d="M160 35 C167 17 182 8 178 -5 C174 -18 159 -16 161 -5 C163 4 174 3 172 -5"
-        stroke="#c4907a" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Left barbs -->
-  <path d="M157 78  C138 68  108 64  80  74"  stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M153 110 C132 99  100 93  70  101" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M149 142 C126 129 92  122 62  128" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M146 174 C122 160 88  153 58  159" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M145 206 C122 196 90  193 65  201" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M145 237 C125 230 98  229 76  238" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M147 268 C130 263 107 265 88  274" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-
-  <!-- Right barbs -->
-  <path d="M163 78  C182 68  212 64  240 74"  stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M167 110 C188 99  220 93  250 101" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M171 142 C194 129 228 122 258 128" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M174 174 C198 160 232 153 262 159" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M175 206 C198 196 230 193 255 201" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M175 237 C195 230 222 229 244 238" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M173 268 C190 263 213 265 232 274" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-
-  <!-- Feather eye -->
-  <ellipse cx="160" cy="310" rx="29" ry="42" stroke="#c4907a" stroke-width="2"/>
-  <ellipse cx="160" cy="310" rx="18" ry="28" fill="#c4907a" opacity="0.18"/>
-  <ellipse cx="160" cy="310" rx="10" ry="16" fill="#c4907a" opacity="0.45"/>
-  <circle  cx="160" cy="310" r="5"   fill="#c4907a" opacity="0.8"/>
-</svg>`;
+<img class="hero-feather" src="brand_assets/peacockfeather_gemini.png" alt="" aria-hidden="true"
+  style="mix-blend-mode:screen;" />`;
 
 function nativeBorder(id) {
   return `<svg class="natam-strip" style="height:14px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -726,25 +692,8 @@ function renderAbout(about) {
   el.innerHTML = `
     <div class="noise-layer"></div>
     <!-- Peacock feather watermark -->
-    <div style="position:absolute;right:-4%;bottom:-8%;width:clamp(300px,35vw,480px);opacity:0.07;pointer-events:none;transform:rotate(8deg);" aria-hidden="true">
-      <svg viewBox="0 0 320 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="160" cy="295" r="178" stroke="#c4907a" stroke-width="1.8"/>
-        <path d="M160 35 C157 95 140 152 144 218 C148 278 163 308 160 360 C157 405 153 438 160 478" stroke="#c4907a" stroke-width="3" stroke-linecap="round"/>
-        <path d="M157 78 C138 68 108 64 80 74"  stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M153 110 C132 99 100 93 70 101" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M149 142 C126 129 92 122 62 128" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M146 174 C122 160 88 153 58 159" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M145 206 C122 196 90 193 65 201" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M163 78 C182 68 212 64 240 74"  stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M167 110 C188 99 220 93 250 101" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M171 142 C194 129 228 122 258 128" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M174 174 C198 160 232 153 262 159" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M175 206 C198 196 230 193 255 201" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <ellipse cx="160" cy="310" rx="29" ry="42" stroke="#c4907a" stroke-width="2"/>
-        <ellipse cx="160" cy="310" rx="10" ry="16" fill="#c4907a" opacity="0.45"/>
-        <circle  cx="160" cy="310" r="5"   fill="#c4907a" opacity="0.8"/>
-      </svg>
-    </div>
+    <img src="brand_assets/peacockfeather_gemini.png" alt="" aria-hidden="true"
+      style="position:absolute;right:-4%;bottom:-8%;width:clamp(300px,35vw,480px);opacity:0.55;pointer-events:none;transform:rotate(8deg);mix-blend-mode:screen;" />
     <div class="section-inner" style="position:relative;z-index:1;">
       <div class="about-grid" style="display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;">
         <div>
@@ -800,19 +749,8 @@ function renderExpertise(expertise) {
   el.innerHTML = `
     <div class="noise-layer" style="opacity:0.04;"></div>
     <!-- Background feather accent -->
-    <div style="position:absolute;right:-4%;bottom:-12%;width:340px;opacity:0.09;pointer-events:none;transform:rotate(12deg);" aria-hidden="true">
-      <svg viewBox="0 0 320 520" fill="none">
-        <path d="M160 35 C157 95 140 152 144 218 C148 278 163 308 160 360 C157 405 153 438 160 478" stroke="#c9a870" stroke-width="3" stroke-linecap="round"/>
-        <path d="M157 78 C138 68 108 64 80 74"  stroke="#c9a870" stroke-width="2" stroke-linecap="round"/>
-        <path d="M153 110 C132 99 100 93 70 101" stroke="#c9a870" stroke-width="2" stroke-linecap="round"/>
-        <path d="M149 142 C126 129 92 122 62 128" stroke="#c9a870" stroke-width="2" stroke-linecap="round"/>
-        <path d="M163 78 C182 68 212 64 240 74"  stroke="#c9a870" stroke-width="2" stroke-linecap="round"/>
-        <path d="M167 110 C188 99 220 93 250 101" stroke="#c9a870" stroke-width="2" stroke-linecap="round"/>
-        <path d="M171 142 C194 129 228 122 258 128" stroke="#c9a870" stroke-width="2" stroke-linecap="round"/>
-        <ellipse cx="160" cy="310" rx="29" ry="42" stroke="#c9a870" stroke-width="2"/>
-        <circle  cx="160" cy="310" r="11"  fill="#c9a870" opacity="0.45"/>
-      </svg>
-    </div>
+    <img src="brand_assets/peacockfeather_gemini.png" alt="" aria-hidden="true"
+      style="position:absolute;right:-4%;bottom:-12%;width:340px;opacity:0.6;pointer-events:none;transform:rotate(12deg);mix-blend-mode:screen;" />
     <div class="section-inner" style="position:relative;z-index:1;">
       <div style="max-width:740px;" data-reveal>
         <div class="expertise-badge">
@@ -890,23 +828,8 @@ function renderRegion(region) {
   el.innerHTML = `
     <div class="noise-layer" style="opacity:0.03;"></div>
     <!-- Peacock feather watermark left side -->
-    <div style="position:absolute;left:-5%;top:50%;transform:translateY(-50%) rotate(-15deg) scaleX(-1);width:clamp(260px,28vw,380px);opacity:0.07;pointer-events:none;" aria-hidden="true">
-      <svg viewBox="0 0 320 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="160" cy="295" r="178" stroke="#c4907a" stroke-width="1.8"/>
-        <path d="M160 35 C157 95 140 152 144 218 C148 278 163 308 160 360 C157 405 153 438 160 478" stroke="#c4907a" stroke-width="3" stroke-linecap="round"/>
-        <path d="M157 78 C138 68 108 64 80 74"  stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M153 110 C132 99 100 93 70 101" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M149 142 C126 129 92 122 62 128" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M146 174 C122 160 88 153 58 159" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M163 78 C182 68 212 64 240 74"  stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M167 110 C188 99 220 93 250 101" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M171 142 C194 129 228 122 258 128" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M174 174 C198 160 232 153 262 159" stroke="#c4907a" stroke-width="1.6" stroke-linecap="round"/>
-        <ellipse cx="160" cy="310" rx="29" ry="42" stroke="#c4907a" stroke-width="2"/>
-        <ellipse cx="160" cy="310" rx="10" ry="16" fill="#c4907a" opacity="0.45"/>
-        <circle  cx="160" cy="310" r="5"   fill="#c4907a" opacity="0.8"/>
-      </svg>
-    </div>
+    <img src="brand_assets/peacockfeather_gemini.png" alt="" aria-hidden="true"
+      style="position:absolute;left:-5%;top:50%;transform:translateY(-50%) rotate(-15deg) scaleX(-1);width:clamp(260px,28vw,380px);opacity:0.55;pointer-events:none;mix-blend-mode:screen;" />
     <div class="section-inner" style="text-align:center;position:relative;z-index:1;" data-reveal>
       ${FEATHER_EYE}
       <h2 class="section-title" style="color:var(--c-cream);margin-bottom:1.2rem;">${region.title}</h2>
